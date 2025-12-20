@@ -1,0 +1,12 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon Background -->
+  <rect x="0" y="0" width="48" height="48" rx="12" fill="#0F172A"></rect>
+
+  <!-- Check Mark -->
+  <path d="M14 25L21 31L34 17" stroke="#34D399" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- Text -->
+  <text x="64" y="32" fill="#0F172A" font-size="24" font-family="Inter, system-ui, sans-serif" font-weight="600" letter-spacing="0.5">
+    PyCheck
+  </text>
+</svg>
