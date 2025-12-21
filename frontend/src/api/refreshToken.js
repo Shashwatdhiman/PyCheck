@@ -1,10 +1,10 @@
-import axios from "axios";
+import api from "../api/api";
 
 const refreshToken = async () => {
   const refresh = localStorage.getItem("refresh_token");
   if (!refresh) throw new Error("No refresh token");
 
-  const response = await axios.post(
+  const response = await api.post(
     "token/refresh/",
     { refresh }
   );

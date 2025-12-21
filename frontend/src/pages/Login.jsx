@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from "../api/api";
 import { useNavigate, Link } from "react-router-dom"; // Added Link for Register
 import { PieChart, User, Lock, ArrowRight, Loader2, AlertCircle } from "lucide-react";
 
@@ -16,7 +16,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post(
+      const res = await api.post(
         "token/",
         { username, password },
         {
