@@ -5,7 +5,7 @@ const refreshToken = async () => {
   if (!refresh) throw new Error("No refresh token");
 
   const response = await axios.post(
-    "http://127.0.0.1:8000/api/token/refresh/",
+    "token/refresh/",
     { refresh }
   );
 
