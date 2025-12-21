@@ -10,7 +10,8 @@ from .views import (
     BudgetUpdateView,
     BudgetDeleteView,
     InsightsView,
-    SavingsView
+    SavingsView,
+    RegisterView
 )
 
 urlpatterns = [
@@ -29,4 +30,5 @@ urlpatterns = [
     path("budgets/<int:budget_id>/delete/", BudgetDeleteView.as_view()),
     path("insights/", InsightsView.as_view()),
     path("savings/", SavingsView.as_view()),
+    path("register/", RegisterView.as_view()),
 ]
