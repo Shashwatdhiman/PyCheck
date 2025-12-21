@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "../api/api";
+import api from "../api/api";
 import { Link, useNavigate } from "react-router-dom";
 import { User, Lock, ArrowRight, Loader2, AlertCircle } from "lucide-react";
 
@@ -17,7 +17,7 @@ const Register = () => {
     setLoading(true);
 
     try {
-      await axios.post("register/", { username, password });
+      await api.post("register/", { username, password });
       navigate("/login");
     } catch (err) {
       setError("Username already exists or invalid input");
